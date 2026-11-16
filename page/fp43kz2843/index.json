@@ -1,0 +1,40 @@
+{
+  "id": "fp43kz2843",
+  "name": {
+    "tr": "Ürünler",
+    "en": "Products",
+    "ar": "المنتجات"
+  },
+  "description": {
+    "tr": "Kavanozlar, kg fiyatları ve etiket bilgisi (kurgusal).",
+    "en": "Jars, prices per kg and label details (fictional).",
+    "ar": "البرطمانات وأسعار الكيلو وبيانات البطاقة (افتراضية)."
+  },
+  "keyword": {
+    "tr": "kuruyemiş, kg fiyatı",
+    "en": "nuts, price per kg",
+    "ar": "مكسرات، سعر الكيلو"
+  },
+  "path": "hizmetler",
+  "icon": "scale",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "heaag8",
+      "o779mw"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Ürünler",
+    "en": "Products",
+    "ar": "المنتجات"
+  },
+  "date": "2026-11-16T20:23:01.153Z",
+  "update": "2026-11-16T20:23:01.158Z"
+}

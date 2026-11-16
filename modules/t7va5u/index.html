@@ -1,0 +1,151 @@
+<header class="modulex-ust-arama-odak{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ust-arama-odak-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</header>
+
+<style>
+  /* ust-arama-odak — Menüye bakmak yerine yazarak ulaşmak: sitede arama olmasa da sayfa listesini yerinde süzen komut paleti; sayfası çok sitelerde en hızlı yol. */
+  .modulex-ust-arama-odak { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ust-arama-odak *, .modulex-ust-arama-odak *::before, .modulex-ust-arama-odak *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ust-arama-odak :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ust-arama-odak :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ust-arama-odak :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ust-arama-odak :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ust-arama-odak img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ust-arama-odak) img { height: auto; }
+  .modulex-ust-arama-odak [hidden] { display: none !important; }
+  .modulex-ust-arama-odak :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ust-arama-odak :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ust-arama-odak-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ust-arama-odak-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ust-arama-odak--bassiz .modulex-ust-arama-odak-bas { display: none; }
+  .modulex-ust-arama-odak-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ust-arama-odak-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ust-arama-odak-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ust-arama-odak-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ust-arama-odak-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ust-arama-odak-dugme:hover { transform: translateY(-2px); }
+  .modulex-ust-arama-odak-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ust-arama-odak-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ust-arama-odak-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-ust-arama-odak { position: relative; z-index: 900; }
+  .modulex-ust-arama-odak-logo { display: inline-flex; flex: 0 1 auto; min-width: 0; align-items: center; color: inherit; text-decoration: none; }
+  /* dar ekranda geniş logo/uzun ad çubuğu taşırmasın: logo daralır (img max-width 100%), ad sarar */
+  .modulex-ust-arama-odak-logo img { width: auto; max-height: --logoH--; }
+  .modulex-ust-arama-odak-ad { font-family: var(--mx-font-heading, inherit); font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .modulex-ust-arama-odak-oge { position: relative; display: inline-flex; align-items: center; min-height: 44px; color: inherit; font-weight: 600; text-decoration: none; transition: color 0.2s ease, background 0.2s ease; }
+  .modulex-ust-arama-odak-oge:hover, .modulex-ust-arama-odak-oge[aria-current="page"] { color: --accentInk--; }
+  .modulex-ust-arama-odak-cta { display: inline-flex; flex: none; align-items: center; gap: 6px; min-height: 44px; padding: 8px 18px; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; white-space: nowrap; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .modulex-ust-arama-odak-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -12px --accent--; }
+  .modulex-ust-arama-odak-cta .material-symbols-outlined, .modulex-ust-arama-odak-tel .material-symbols-outlined, .modulex-ust-arama-odak-posta .material-symbols-outlined { font-size: 18px; }
+  .modulex-ust-arama-odak-tel, .modulex-ust-arama-odak-posta { display: inline-flex; align-items: center; gap: 6px; color: inherit; text-decoration: none; white-space: nowrap; }
+  .modulex-ust-arama-odak-tel:hover, .modulex-ust-arama-odak-posta:hover { color: --accentInk--; }
+  .modulex-ust-arama-odak-dil:empty { display: none; }
+  .modulex-ust-arama-odak-ac { display: none; align-items: center; gap: 10px; min-width: 46px; min-height: 46px; padding: 0 12px; border: 1px solid --cizgi--; border-radius: 999px; background: transparent; color: inherit; font: inherit; font-weight: 700; }
+  .modulex-ust-arama-odak-ac-ikon { display: grid; gap: 4px; width: 20px; }
+  .modulex-ust-arama-odak-ac-ikon span { display: block; height: 2px; border-radius: 2px; background: currentColor; transition: transform 0.3s ease, opacity 0.3s ease; }
+  .modulex-ust-arama-odak--acik .modulex-ust-arama-odak-ac-ikon span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .modulex-ust-arama-odak--acik .modulex-ust-arama-odak-ac-ikon span:nth-child(2) { opacity: 0; }
+  .modulex-ust-arama-odak--acik .modulex-ust-arama-odak-ac-ikon span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  .modulex-ust-arama-odak-kapat { display: inline-grid; place-items: center; width: 46px; height: 46px; border: 1px solid --cizgi--; border-radius: 50%; background: transparent; color: inherit; }
+  .modulex-ust-arama-odak-perde { position: fixed; inset: 0; z-index: 1; background: color-mix(in srgb, --text-- 45%, transparent); animation: modulex-ust-arama-odak-sol 0.3s ease both; }
+  @keyframes modulex-ust-arama-odak-sol { from { opacity: 0; } to { opacity: 1; } }
+
+  .modulex-ust-arama-odak-tepe { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding-block: 14px 10px; }
+  .modulex-ust-arama-odak-uc { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; }
+  .modulex-ust-arama-odak-palet { display: grid; gap: 12px; padding-block-end: 16px; }
+  .modulex-ust-arama-odak-alan { position: relative; display: flex; align-items: center; gap: 10px; min-height: 58px; padding-inline: 18px 8px; border: 2px solid --cizgi--; border-radius: 16px; background-color: --kartBg--; transition: border-color 0.2s ease, box-shadow 0.25s ease; }
+  .modulex-ust-arama-odak-alan:focus-within { border-color: --accent--; box-shadow: 0 0 0 4px color-mix(in srgb, --accent-- 22%, transparent); }
+  .modulex-ust-arama-odak-buyutec { color: --muted--; font-size: 24px; transition: color 0.2s ease; }
+  .modulex-ust-arama-odak-alan:focus-within .modulex-ust-arama-odak-buyutec { color: --accentInk--; }
+  .modulex-ust-arama-odak-girdi { flex: 1 1 auto; min-width: 0; height: 52px; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; font-size: 1.1rem; font-weight: 600; outline: none; -webkit-appearance: none; appearance: none; }
+  .modulex-ust-arama-odak-girdi::placeholder { color: --muted--; opacity: 1; }
+  .modulex-ust-arama-odak-girdi::-webkit-search-cancel-button { display: none; }
+  .modulex-ust-arama-odak-sil { display: inline-grid; flex: none; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 10px; background-color: color-mix(in srgb, --text-- 8%, transparent); color: inherit; transition: background-color 0.2s ease; }
+  .modulex-ust-arama-odak-sil:hover { background-color: color-mix(in srgb, --text-- 15%, transparent); }
+  .modulex-ust-arama-odak-sonuc { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-ust-arama-odak-cip { position: relative; display: inline-flex; align-items: center; min-height: 40px; padding: 6px 14px; border: 1px solid --cizgi--; border-radius: 10px; color: inherit; font-size: 0.95rem; font-weight: 600; text-decoration: none; transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease; animation: modulex-ust-arama-odak-cik 0.25s ease both; }
+  @keyframes modulex-ust-arama-odak-cik { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  .modulex-ust-arama-odak-cip:hover { border-color: --accent--; transform: translateY(-1px); }
+  .modulex-ust-arama-odak-cip[aria-current="page"] { border-color: --text--; background-color: --text--; color: --bg--; }
+  .modulex-ust-arama-odak-cip--ilk { border-color: --accent--; box-shadow: 0 0 0 3px color-mix(in srgb, --accent-- 25%, transparent); }
+  .modulex-ust-arama-odak-yok { color: --muted--; font-size: 0.95rem; }
+  @media (max-width: 768px) {
+    .modulex-ust-arama-odak-alan { min-height: 52px; padding-inline-start: 14px; border-radius: 14px; }
+    .modulex-ust-arama-odak-girdi { height: 46px; font-size: 1rem; }
+    .modulex-ust-arama-odak-uc .modulex-ust-arama-odak-cta { min-height: 40px; padding-inline: 14px; font-size: 0.9rem; }
+    .modulex-ust-arama-odak-sonuc { gap: 6px; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ust-arama-odak :is(.modulex-ust-arama-odak-baslik, .modulex-ust-arama-odak-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ust-arama-odak-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ust-arama-odak { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-ust-arama-odak *, .modulex-ust-arama-odak *::before, .modulex-ust-arama-odak *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-ust-arama-odak";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const suzgec = (s, P) => {
+        const alan = s.querySelector("." + P + "-alan");
+        const q = s.querySelector("." + P + "-girdi");
+        if (!alan || !q) return;
+        alan.hidden = false;
+        s.classList.add(P + "--js");
+        const sil = s.querySelector("." + P + "-sil");
+        const yok = s.querySelector("." + P + "-yok");
+        const ogeler = [...s.querySelectorAll("." + P + "-sonuc > li")];
+        const dl = document.documentElement.lang || undefined;
+        const kucuk = (t) => String(t || "").toLocaleLowerCase(dl).normalize("NFD").replace(/[̀-ͯ]/g, "");
+        const ilk = () => ogeler.find((li) => !li.hidden);
+        const suz = () => {
+          const a = kucuk(q.value.trim());
+          let n = 0;
+          ogeler.forEach((li) => {
+            const uy = !a || kucuk(li.textContent).indexOf(a) !== -1;
+            li.hidden = !uy;
+            if (uy) n++;
+            const c = li.querySelector("a");
+            if (c) c.classList.remove(P + "-cip--ilk");
+          });
+          const b = a ? ilk() : null;
+          if (b && b.querySelector("a")) b.querySelector("a").classList.add(P + "-cip--ilk");
+          if (yok) yok.hidden = n > 0;
+          if (sil) sil.hidden = !q.value;
+          s.classList.toggle(P + "--suz", !!a);
+        };
+        q.addEventListener("input", suz);
+        q.addEventListener("keydown", (e) => {
+          const b = ilk();
+          const l = b ? b.querySelector("a[href]") : null;
+          if (e.key === "Escape" && q.value) { e.preventDefault(); q.value = ""; suz(); }
+          else if (e.key === "Enter" && l && q.value.trim()) { e.preventDefault(); l.click(); }
+          else if (e.key === "ArrowDown" && l) { e.preventDefault(); l.focus(); }
+        });
+        if (sil) sil.addEventListener("click", () => { q.value = ""; suz(); q.focus(); });
+        document.addEventListener("keydown", (e) => {
+          if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
+          const t = e.target;
+          if (t && (t.isContentEditable || /^(input|textarea|select)$/i.test(t.tagName || ""))) return;
+          e.preventDefault();
+          q.focus();
+        });
+        suz();
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      suzgec(s, P, az);
+    });
+  })();
+</script>
