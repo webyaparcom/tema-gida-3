@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Atölye",
+    "en": "Workshop",
+    "ar": "الورشة"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "js7ekb",
+      "zrd1wt"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Kavurmanın katmanları ve atölyenin adresi (kurgusal).",
+    "en": "The layers of a roast and the workshop address (fictional).",
+    "ar": "طبقات التحميص وعنوان الورشة (افتراضي)."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Atölye",
+    "en": "Workshop",
+    "ar": "الورشة"
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "text": {},
+  "update": "2026-11-16T20:23:01.165Z",
+  "date": "2026-10-30"
+}

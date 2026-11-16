@@ -1,0 +1,39 @@
+{
+  "id": "rwr9gv2dr3",
+  "name": {
+    "tr": "Stand",
+    "en": "Stand",
+    "ar": "الركن"
+  },
+  "description": {
+    "tr": "Etkinlik kavurma standı; günlük fiyatlar KDV dahil (demo).",
+    "en": "Event roasting stand; daily prices incl. VAT (demo).",
+    "ar": "ركن تحميص للمناسبات؛ أسعار يومية شاملة الضريبة (تجريبي)."
+  },
+  "keyword": {
+    "tr": "etkinlik standı, düğün ikramı",
+    "en": "event stand, wedding catering",
+    "ar": "ركن مناسبات، ضيافة الأعراس"
+  },
+  "path": "teklif-al",
+  "icon": "storefront",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "7id2ao"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Stand",
+    "en": "Stand",
+    "ar": "الركن"
+  },
+  "date": "2026-11-16T20:23:01.166Z",
+  "update": "2026-11-16T20:23:01.172Z"
+}

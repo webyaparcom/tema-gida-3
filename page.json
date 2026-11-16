@@ -1,0 +1,112 @@
+{
+  "data": [
+    {
+      "id": "fp43kz2843",
+      "name": {
+        "tr": "Ürünler",
+        "en": "Products",
+        "ar": "المنتجات"
+      },
+      "description": {
+        "tr": "Kavanozlar, kg fiyatları ve etiket bilgisi (kurgusal).",
+        "en": "Jars, prices per kg and label details (fictional).",
+        "ar": "البرطمانات وأسعار الكيلو وبيانات البطاقة (افتراضية)."
+      },
+      "path": "hizmetler",
+      "icon": "scale",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "heaag8",
+          "o779mw"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Atölye",
+        "en": "Workshop",
+        "ar": "الورشة"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "js7ekb",
+          "zrd1wt"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Kavurmanın katmanları ve atölyenin adresi (kurgusal).",
+        "en": "The layers of a roast and the workshop address (fictional).",
+        "ar": "طبقات التحميص وعنوان الورشة (افتراضي)."
+      }
+    },
+    {
+      "id": "rwr9gv2dr3",
+      "name": {
+        "tr": "Stand",
+        "en": "Stand",
+        "ar": "الركن"
+      },
+      "description": {
+        "tr": "Etkinlik kavurma standı; günlük fiyatlar KDV dahil (demo).",
+        "en": "Event roasting stand; daily prices incl. VAT (demo).",
+        "ar": "ركن تحميص للمناسبات؛ أسعار يومية شاملة الضريبة (تجريبي)."
+      },
+      "path": "teklif-al",
+      "icon": "storefront",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "7id2ao"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 3,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "zrd1wt",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Teklif, adres ve kavurma saatleri.",
+        "en": "Quote, address and roasting hours.",
+        "ar": "عرض السعر والعنوان وساعات التحميص."
+      }
+    }
+  ],
+  "desc": []
+}
