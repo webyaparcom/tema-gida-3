@@ -3,17 +3,23 @@
   "name": {
     "tr": "Stand",
     "en": "Stand",
-    "ar": "الركن"
+    "ar": "الركن",
+    "de": "Stände",
+    "ru": "Стенды"
   },
   "description": {
     "tr": "Etkinlik kavurma standı; günlük fiyatlar KDV dahil (demo).",
     "en": "Event roasting stand; daily prices incl. VAT (demo).",
-    "ar": "ركن تحميص للمناسبات؛ أسعار يومية شاملة الضريبة (تجريبي)."
+    "ar": "ركن تحميص للمناسبات؛ أسعار يومية شاملة الضريبة (تجريبي).",
+    "de": "Event-Röststand; Tagespreise inkl. MwSt. (Demo).",
+    "ru": "Стойка для обжарки на мероприятиях; дневные цены с НДС (демо)."
   },
   "keyword": {
     "tr": "etkinlik standı, düğün ikramı",
     "en": "event stand, wedding catering",
-    "ar": "ركن مناسبات، ضيافة الأعراس"
+    "ar": "ركن مناسبات، ضيافة الأعراس",
+    "de": "Veranstaltungsstand, Hochzeitscatering",
+    "ru": "стенд мероприятия, свадебное угощение"
   },
   "path": "teklif-al",
   "icon": "storefront",
@@ -32,7 +38,9 @@
   "title": {
     "tr": "Stand",
     "en": "Stand",
-    "ar": "الركن"
+    "ar": "الركن",
+    "de": "Stände",
+    "ru": "Стенды"
   },
   "date": "2026-11-16T20:23:01.166Z",
   "update": "2026-11-16T20:23:01.172Z"

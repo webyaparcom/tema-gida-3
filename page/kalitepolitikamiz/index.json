@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>Her partide nem, kavurma sıcaklığı ve etiket kontrolü; kayıtlar iki yıl saklanır (örnek, DEMO).</p>",
     "en": "<h2>Our quality policy</h2>\n<p>Moisture, roasting temperature and label checks on every batch; records are kept for two years (sample, DEMO).</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>فحص الرطوبة وحرارة التحميص والبطاقة لكل دفعة، وتُحفظ السجلات عامين (نموذج، DEMO).</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>فحص الرطوبة وحرارة التحميص والبطاقة لكل دفعة، وتُحفظ السجلات عامين (نموذج، DEMO).</p>",
+    "de": "<h2>Unsere Qualitätspolitik</h2>\n<p>Bei jeder Charge Kontrolle von Feuchtigkeit, Rösttemperatur und Etikett; die Aufzeichnungen werden zwei Jahre aufbewahrt (Beispiel, DEMO).</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>Контроль влажности, температуры обжарки и этикетки для каждой партии; записи хранятся два года (пример, ДЕМО).</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T20:23:01.021Z",
   "update": "2026-11-16T20:23:01.190Z",
