@@ -3,17 +3,23 @@
   "name": {
     "tr": "Ürünler",
     "en": "Products",
-    "ar": "المنتجات"
+    "ar": "المنتجات",
+    "de": "Produkte",
+    "ru": "Продукты"
   },
   "description": {
     "tr": "Kavanozlar, kg fiyatları ve etiket bilgisi (kurgusal).",
     "en": "Jars, prices per kg and label details (fictional).",
-    "ar": "البرطمانات وأسعار الكيلو وبيانات البطاقة (افتراضية)."
+    "ar": "البرطمانات وأسعار الكيلو وبيانات البطاقة (افتراضية).",
+    "de": "Gläser, Preise pro kg und Etikettinformationen (fiktiv).",
+    "ru": "Банки, цены за кг и информация на этикетке (вымышленные)."
   },
   "keyword": {
     "tr": "kuruyemiş, kg fiyatı",
     "en": "nuts, price per kg",
-    "ar": "مكسرات، سعر الكيلو"
+    "ar": "مكسرات، سعر الكيلو",
+    "de": "Nüsse, Preis pro kg",
+    "ru": "орехи, цена за кг"
   },
   "path": "hizmetler",
   "icon": "scale",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Ürünler",
     "en": "Products",
-    "ar": "المنتجات"
+    "ar": "المنتجات",
+    "de": "Produkte",
+    "ru": "Продукты"
   },
   "date": "2026-11-16T20:23:01.153Z",
   "update": "2026-11-16T20:23:01.158Z"

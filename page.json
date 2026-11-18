@@ -5,12 +5,16 @@
       "name": {
         "tr": "Ürünler",
         "en": "Products",
-        "ar": "المنتجات"
+        "ar": "المنتجات",
+        "de": "Produkte",
+        "ru": "Продукты"
       },
       "description": {
         "tr": "Kavanozlar, kg fiyatları ve etiket bilgisi (kurgusal).",
         "en": "Jars, prices per kg and label details (fictional).",
-        "ar": "البرطمانات وأسعار الكيلو وبيانات البطاقة (افتراضية)."
+        "ar": "البرطمانات وأسعار الكيلو وبيانات البطاقة (افتراضية).",
+        "de": "Gläser, Preise pro kg und Etikettinformationen (fiktiv).",
+        "ru": "Банки, цены за кг и информация на этикетке (вымышленные)."
       },
       "path": "hizmetler",
       "icon": "scale",
@@ -30,7 +34,9 @@
       "name": {
         "tr": "Atölye",
         "en": "Workshop",
-        "ar": "الورشة"
+        "ar": "الورشة",
+        "de": "Workshop",
+        "ru": "Воркшоп"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -51,7 +57,9 @@
       "description": {
         "tr": "Kavurmanın katmanları ve atölyenin adresi (kurgusal).",
         "en": "The layers of a roast and the workshop address (fictional).",
-        "ar": "طبقات التحميص وعنوان الورشة (افتراضي)."
+        "ar": "طبقات التحميص وعنوان الورشة (افتراضي).",
+        "de": "Die Röstschichten und die Adresse der Werkstatt (fiktiv).",
+        "ru": "Слои обжарки и адрес мастерской (условные)."
       }
     },
     {
@@ -59,12 +67,16 @@
       "name": {
         "tr": "Stand",
         "en": "Stand",
-        "ar": "الركن"
+        "ar": "الركن",
+        "de": "Stände",
+        "ru": "Стенды"
       },
       "description": {
         "tr": "Etkinlik kavurma standı; günlük fiyatlar KDV dahil (demo).",
         "en": "Event roasting stand; daily prices incl. VAT (demo).",
-        "ar": "ركن تحميص للمناسبات؛ أسعار يومية شاملة الضريبة (تجريبي)."
+        "ar": "ركن تحميص للمناسبات؛ أسعار يومية شاملة الضريبة (تجريبي).",
+        "de": "Event-Röststand; Tagespreise inkl. MwSt. (Demo).",
+        "ru": "Стойка для обжарки на мероприятиях; дневные цены с НДС (демо)."
       },
       "path": "teklif-al",
       "icon": "storefront",
@@ -83,7 +95,9 @@
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -104,7 +118,9 @@
       "description": {
         "tr": "Teklif, adres ve kavurma saatleri.",
         "en": "Quote, address and roasting hours.",
-        "ar": "عرض السعر والعنوان وساعات التحميص."
+        "ar": "عرض السعر والعنوان وساعات التحميص.",
+        "de": "Angebot, Adresse und Röstzeiten.",
+        "ru": "Предложение, адрес и часы обжарки."
       }
     }
   ],

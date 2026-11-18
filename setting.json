@@ -4,12 +4,16 @@
   "description": {
     "tr": "Kabukçu Kavurma Evi: Gaziantep’te Antep fıstığı, fındık, badem, leblebi ve kaju kavurma atölyesi. Toptan, otel-restoran, hediye kutusu ve etkinlik kavurma standı. Demo site; içerik kurgusaldır.",
     "en": "Kabukçu Roastery: a Gaziantep workshop roasting pistachios, hazelnuts, almonds, chickpeas and cashews. Wholesale, hotels and restaurants, gift boxes and an event roasting stand. Demo site; content is fictional.",
-    "ar": "محمصة كابوكجو: ورشة في غازي عنتاب لتحميص الفستق الحلبي والبندق واللوز والحمص والكاجو. بيع بالجملة وللفنادق والمطاعم وعلب هدايا وركن تحميص للمناسبات. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "محمصة كابوكجو: ورشة في غازي عنتاب لتحميص الفستق الحلبي والبندق واللوز والحمص والكاجو. بيع بالجملة وللفنادق والمطاعم وعلب هدايا وركن تحميص للمناسبات. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Kabukçu Kavurma Evi: Rösterei in Gaziantep für Pistazien, Haselnüsse, Mandeln, Kichererbsen und Cashews. Großhandel, Hotel und Restaurant, Geschenkboxen und Röststand für Veranstaltungen. Demo-Website; der Inhalt ist fiktiv.",
+    "ru": "Kabukçu Kavurma Evi: мастерская обжарки фисташек, фундука, миндаля, нута и кешью в Газиантепе. Опт, отели и рестораны, подарочные коробки и стенд обжарки для мероприятий. Демо-сайт; содержание вымышлено."
   },
   "keyword": {
     "tr": "kuruyemiş kavurma, antep fıstığı, leblebi, toptan kuruyemiş, hediye kutusu, gaziantep",
     "en": "nut roastery, pistachio, roasted chickpeas, wholesale nuts, gift box, gaziantep",
-    "ar": "تحميص المكسرات، فستق حلبي، حمص محمّص، مكسرات بالجملة، علبة هدايا، غازي عنتاب"
+    "ar": "تحميص المكسرات، فستق حلبي، حمص محمّص، مكسرات بالجملة، علبة هدايا، غازي عنتاب",
+    "de": "Nussrösterei, Antep-Pistazien, Röstkichererbsen, Nüsse im Großhandel, Geschenkbox, Gaziantep",
+    "ru": "обжарка орехов, фисташки из Антепа, жареный нут, оптовые орехи, подарочная коробка, Газиантеп"
   },
   "category": "Kurumsal",
   "name": "Kabukçu",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

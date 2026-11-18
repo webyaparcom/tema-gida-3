@@ -2,7 +2,9 @@
   "name": {
     "tr": "Atölye",
     "en": "Workshop",
-    "ar": "الورشة"
+    "ar": "الورشة",
+    "de": "Workshop",
+    "ru": "Воркшоп"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Kavurmanın katmanları ve atölyenin adresi (kurgusal).",
     "en": "The layers of a roast and the workshop address (fictional).",
-    "ar": "طبقات التحميص وعنوان الورشة (افتراضي)."
+    "ar": "طبقات التحميص وعنوان الورشة (افتراضي).",
+    "de": "Die Röstschichten und die Adresse der Werkstatt (fiktiv).",
+    "ru": "Слои обжарки и адрес мастерской (условные)."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Atölye",
     "en": "Workshop",
-    "ar": "الورشة"
+    "ar": "الورشة",
+    "de": "Workshop",
+    "ru": "Воркшоп"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T20:23:01.165Z",
